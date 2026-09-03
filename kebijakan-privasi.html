@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi - n8n Warga Triss</title>
+<style>
+body{max-width:44rem;margin:0 auto;padding:2rem 1.25rem 5rem;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1b1b1b;background:#fff}
+h1{font-size:1.6rem;margin:0 0 .25rem}
+h2{font-size:1.1rem;margin:2.2rem 0 .5rem}
+.meta{color:#666;font-size:.9rem;margin-bottom:2rem}
+ul{padding-left:1.2rem}
+li{margin:.35rem 0}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #e5e5e5;color:#666;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Kebijakan Privasi</h1>
+<p class="meta">Aplikasi: <strong>n8n Warga Triss</strong><br>Berlaku sejak 3 September 2026</p>
+
+<p>Halaman ini menjelaskan data apa yang diakses oleh aplikasi <strong>n8n Warga Triss</strong>, untuk apa data itu dipakai, dan bagaimana data itu disimpan. Aplikasi ini adalah alat administrasi internal RT untuk lingkungan perumahan Triss Living, Rempoa, Tangerang Selatan. Aplikasi ini tidak dijual, tidak menampilkan iklan, dan tidak terbuka untuk umum.</p>
+
+<h2>1. Siapa yang mengelola</h2>
+<p>Aplikasi dikelola oleh pengurus RT Triss Living secara pribadi. Kontak: <a href="mailto:hendrabrawijaya@gmail.com">hendrabrawijaya@gmail.com</a>.</p>
+
+<h2>2. Siapa yang memakai</h2>
+<p>Satu-satunya pengguna yang menyambungkan akun Google ke aplikasi ini adalah pengurus RT sendiri. Warga tidak membuat akun, tidak login, dan tidak menyambungkan akun Google apa pun ke aplikasi ini.</p>
+
+<h2>3. Data Google yang diakses dan alasannya</h2>
+<ul>
+<li><strong>Google Drive</strong> - membuat folder per bulan dan mengunggah gambar bukti transfer IPL yang diteruskan warga lewat WhatsApp ke pengurus RT, supaya arsip pembayaran tersusun rapi.</li>
+<li><strong>Google Sheets</strong> - membaca dan menulis sel pada spreadsheet rekap iuran RT milik pengurus (daftar unit, status pembayaran, catatan perubahan), supaya rekap tidak perlu diketik ulang.</li>
+</ul>
+<p>Akses hanya menyentuh berkas milik akun pengurus RT yang menyambungkan aplikasi. Aplikasi tidak membaca berkas orang lain dan tidak membagikan berkas ke siapa pun.</p>
+
+<h2>4. Data yang diproses</h2>
+<ul>
+<li>Gambar bukti transfer yang dikirim warga ke nomor WhatsApp RT.</li>
+<li>Nama, nomor unit rumah, tanggal, dan nominal pembayaran yang tertera pada bukti tersebut.</li>
+<li>Nomor WhatsApp pengirim, dipakai hanya untuk mencocokkan bukti dengan unit rumah yang benar.</li>
+</ul>
+<p>Aplikasi tidak mengumpulkan nomor identitas kependudukan, nomor kartu, data kesehatan, lokasi, maupun data penelusuran.</p>
+
+<h2>5. Ke mana data mengalir</h2>
+<ul>
+<li><strong>Google Drive dan Google Sheets</strong> milik akun pengurus RT - tempat arsip dan rekap disimpan.</li>
+<li><strong>WhatsApp Business Platform (Meta)</strong> - jalur masuk pesan dan gambar dari warga.</li>
+<li><strong>Anthropic (api.anthropic.com)</strong> - gambar bukti transfer dikirim untuk dibaca otomatis (OCR) agar nominal dan tanggal terisi sendiri. Hanya gambar bukti transfer yang dikirim; tidak ada rekening koran, daftar tunggakan, atau daftar nomor telepon yang dikirim ke sana.</li>
+</ul>
+<p>Data tidak dijual, tidak disewakan, dan tidak dipakai untuk iklan atau profiling. Aplikasi tidak memakai data pengguna Google Workspace API untuk melatih model kecerdasan buatan umum.</p>
+
+<h2>6. Penyimpanan dan retensi</h2>
+<p>Arsip bukti dan rekap disimpan di Google Drive dan Google Sheets milik pengurus RT selama <strong>5 tahun</strong> sebagai catatan keuangan lingkungan, lalu dihapus. Otomasi berjalan di server n8n yang dikelola sendiri (self-hosted) dan tidak menyimpan salinan permanen gambar di luar Google Drive.</p>
+
+<h2>7. Hak warga</h2>
+<p>Warga dapat meminta salinan, koreksi, atau penghapusan data pembayarannya dengan menghubungi pengurus RT di <a href="mailto:hendrabrawijaya@gmail.com">hendrabrawijaya@gmail.com</a>. Permintaan diproses selambatnya 30 hari.</p>
+
+<h2>8. Mencabut akses Google</h2>
+<p>Pengurus RT dapat mencabut izin aplikasi kapan saja melalui <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Setelah dicabut, aplikasi berhenti mengakses Drive dan Sheets seketika.</p>
+
+<h2>9. Keamanan</h2>
+<p>Sambungan ke Google memakai OAuth 2.0. Token disimpan terenkripsi di server n8n dan tidak pernah dibagikan. Akses ke server dibatasi ke pengurus RT.</p>
+
+<h2>10. Perubahan kebijakan</h2>
+<p>Perubahan akan dimuat di halaman ini beserta tanggal berlakunya.</p>
+
+<footer>Pengurus RT Triss Living - Rempoa, Tangerang Selatan - hendrabrawijaya@gmail.com</footer>
+</body>
+</html>
